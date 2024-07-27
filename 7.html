@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="so" placeholder="Nhap So">
+<input type="button" value="Tim" onclick="hienLe()">
+<script>
+    function hienLe() {
+        let n = Number(document.getElementById("so").value);
+        for (let i = 1; i <= n; i++) {
+            if (i % 2 !== 0) {
+                document.write(i + "<br>");
+            }
+        }
+    }
+</script>
+</body>
+</html>
